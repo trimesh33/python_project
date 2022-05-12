@@ -1,0 +1,15 @@
+{% extends "layouts/base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="row"></div>
+{% for url in links %}
+  <img src="{{ url }}" alt="result_image" class="result-images">
+{% endfor %}
+<!-- {% for data in datalist %}
+  <img class="results-img" src="/{{ imgdata }}" alt="result_images">
+{% endfor %} -->
+</div>
+{% endblock %}
